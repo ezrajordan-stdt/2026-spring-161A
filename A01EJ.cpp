@@ -1,7 +1,7 @@
 // ------------- FILE HEADER -------------
-// Author ✅: 
-// Assignment ✅:
-// Date ✅:
+// Author ✅: Ezra Jordan
+// Assignment ✅: Assignment 01 Weekly Payroll
+// Date ✅: 04/12
 // Citations: 
 
 
@@ -12,22 +12,16 @@
 // Labs ✅:
 
 
-// ------------- DISCORD POSTS -------------
-// https://discord.com/invite/URYKKf8YHm
-// Count ✅:
-// Links (Optional): 
-
-
 // ------------- DESIGN DOCUMENT -------------
-// A. INPUT ✅: 
-// B. OUTPUT ✅:
-// C. CALCULATIONS ✅:
-// D. LOGIC and ALGORITHMS ✅:
+// A. INPUT ✅: y
+// B. OUTPUT ✅: y
+// C. CALCULATIONS ✅: y
+// D. LOGIC and ALGORITHMS ✅: y
 //    (Optional) flow chart link or file name: 
 
 
 // ------------- TESTING -------------
-// PASS ALL GIVEN SAMPLE RUN TESTS ✅: 
+// PASS ALL GIVEN SAMPLE RUN TESTS ✅: no
 // (Optional) Additional tests count:   
 
 
@@ -42,8 +36,43 @@ using namespace std;
 // Main function
 // https://en.cppreference.com/w/cpp/language/main_function.html
 int main(int argc, char* argv[]) {
+  //declare variables
+  int numID = 0;
+  int hoursWorked = 0;
+  int rateHourly = 0;
+  int fedWithholdingRate = 0;
+  int payGross = 0;
+  int payWithheld = 0;
+  int payNet = 0;
+
+  //input
+  cout << "Welcome to my Weekly Payroll program!!" << endl;
+  cout << "Enter your employee ID number (numbers only): ";
+  cin >> numID;
+  cout << "Enter number of hours worked (whole numbers): ";
+  cin >> hoursWorked;
+  cout << "Enter the hourly rate: ";
+  cin >> rateHourly;
+  cout << "Enter the federal withholding rate: ";
+  cin >> fedWithholdingRate;
+  cout << endl;
+
+  //calculations
+  payGross = hoursWorked * rateHourly;
+  
+  payWithheld = payGross * fedWithholdingRate / 100;
+  
+  payNet = payGross - payWithheld;
+
+  //output
+  cout << "Your Payroll Summary:" << endl;
+  cout << "Total Gross Pay: $" << payGross << endl;
+  cout << "Federal Tax Withholding: $" << payWithheld << endl;
+  cout << "Net Pay: $" << payNet << endl;
+  cout << "Thank you for using my Weekly Payroll program!! " << endl;
   
   return 0;
+
 }
 
 // Function implementations (if any)
