@@ -2,7 +2,7 @@
 // Author ✅: Ezra Jordan
 // Assignment ✅: Assignment 01 Weekly Payroll
 // Date ✅: 04/12
-// Citations: 
+// Citations: N/A
 
 
 // ------------- ZYBOOKS SCORES -------------
